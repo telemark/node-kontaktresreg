@@ -1,0 +1,39 @@
+{
+  "name": "kontaktresreg",
+  "version": "1.0.0",
+  "description": "Klient for kontakt og reservasjonsregisteret",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard && tap --reporter=spec test/*.js",
+    "coverage": "tap test/*.js --coverage",
+    "coveralls": "tap --cov --coverage-report=lcov test/*.js && cat coverage/lcov.info | coveralls",
+    "setup": "npm install && node setup.js"
+  },
+  "keywords": [
+    "kontaktregistreret",
+    "reservasjonsregisteret",
+    "Telemark fylkeskommune"
+  ],
+  "standard": {
+    "ignore": [
+      "public"
+    ]
+  },
+  "author": "Jonas Enge <jonas.enge@gmail.com> (http://github.com/maccyber)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/telemark/node-kontaktresreg.git"
+  },
+  "bugs": {
+    "url": "http://github.com/telemark/node-kontaktresreg/issues"
+  },
+  "devDependencies": {
+    "coveralls": "^2.11.6",
+    "standard": "^6.0.5",
+    "tap": "^5.4.4"
+  },
+  "dependencies": {
+    "soap": "git+https://github.com/vpulim/node-soap.git"
+  }
+}

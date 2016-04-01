@@ -1,0 +1,9 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://kontaktinfo.difi.no/wsdl/oppslagstjeneste-16-02">
+<soapenv:Header/>
+<soapenv:Body>
+<ns:HentPersonerForespoersel>
+<ns:informasjonsbehov>Kontaktinfo</ns:informasjonsbehov>
+<ns:personidentifikator>01013355300</ns:personidentifikator>
+</ns:HentPersonerForespoersel>
+</soapenv:Body>
+</soapenv:Envelope>

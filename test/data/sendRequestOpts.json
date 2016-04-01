@@ -1,0 +1,13 @@
+{
+  "wsdl": "http://begrep.difi.no/Oppslagstjenesten/xsd/oppslagstjeneste-ws-16-02.wsdl",
+  "url": "https://kontaktinfo-ws-ver1.difi.no/kontaktinfo-external/ws-v5",
+  "action": "HentPersoner",
+  "args": {
+    "informasjonsbehov": "Kontaktinfo",
+    "personidentifikator": "01013355300"
+  },
+  "privateKey": "sertifikat",
+  "publicKey": "sertifikat",
+  "password": ""
+}
+
