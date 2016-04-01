@@ -8,7 +8,7 @@ var privateKeyPath = './cert/private.pem'
 var publicKeyPath = './cert/public.crt'
 
 var options = {
-  wsdl: settings.wsdl,
+  wsdl: settings.wsdl.url,
   url: settings.url.ver1,
   action: settings.action.person,
   args: {
