@@ -3,6 +3,13 @@
 # kontaktresreg
 Node klient for kontakt- og reservasjonsregisteret
 
+Henter ut informasjon via følgende 3 SOAP-WS API-metoder;
+
+	- HentPersoner
+	- HentEndringer
+	- HentPrintSertifikat
+der samtlige er sikret med kryptering og signering (WS-S).
+
 ## Installation
 
 npm install kontaktresreg
