@@ -7,5 +7,9 @@ Node klient for kontakt- og reservasjonsregisteret
 
 npm install kontaktresreg
 
+## Disclaimer
+
+This is not an official module from difi
+
 ## Lisens
 [MIT](LICENSE)
