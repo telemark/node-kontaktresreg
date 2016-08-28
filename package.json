@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Klient for kontakt og reservasjonsregisteret",
   "main": "index.js",
+  "engines": {
+    "node": ">=4.5.0"
+  },
   "scripts": {
     "test": "standard && tap --reporter=spec test/*.js",
     "coverage": "tap test/*.js --coverage",
@@ -20,6 +23,13 @@
     ]
   },
   "author": "Jonas Enge <jonas.enge@gmail.com> (http://github.com/maccyber)",
+  "contributors": [
+    {
+      "name": "Geir Gåsodden",
+      "email": "geir.gasodden@pythonia.no",
+      "url": "https://github.com/zrrrzzt"
+    }
+  ],
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -29,9 +39,9 @@
     "url": "http://github.com/telemark/node-kontaktresreg/issues"
   },
   "devDependencies": {
-    "coveralls": "^2.11.6",
-    "standard": "^8.0.0",
-    "tap": "^7.0.0"
+    "coveralls": "2.11.6",
+    "standard": "8.0.0",
+    "tap": "7.0.0"
   },
   "dependencies": {
     "soap": "git+https://github.com/vpulim/node-soap.git"
