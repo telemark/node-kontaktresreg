@@ -1,15 +1,15 @@
 {
   "name": "kontaktresreg",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Klient for kontakt og reservasjonsregisteret",
   "main": "index.js",
   "engines": {
     "node": ">=4.6.1"
   },
   "scripts": {
-    "test": "standard && nsp check && tap --reporter=spec test/*.js",
-    "coverage": "tap test/*.js --coverage",
-    "coveralls": "tap --cov --coverage-report=lcov test/*.js && cat coverage/lcov.info | coveralls",
+    "test": "standard && nsp check && tap --reporter=spec test/**/*.js",
+    "coverage": "tap test/**/*.js --coverage",
+    "coveralls": "tap --cov --coverage-report=lcov test/**/*.js && cat coverage/lcov.info | coveralls",
     "setup": "npm install && node setup.js"
   },
   "keywords": [
@@ -17,11 +17,6 @@
     "reservasjonsregisteret",
     "Telemark fylkeskommune"
   ],
-  "standard": {
-    "ignore": [
-      "public"
-    ]
-  },
   "author": "Jonas Enge <jonas.enge@gmail.com> (http://github.com/maccyber)",
   "contributors": [
     {

@@ -1,8 +1,8 @@
 'use strict'
 
 var tap = require('tap')
-var testOptions = require('./data/sendRequestOpts.json')
-var sendRequest = require('../lib/sendRequest')
+var testOptions = require('./../data/sendRequestOpts.json')
+var sendRequest = require('../../lib/sendRequest')
 
 tap.throws(
   function (test) {
