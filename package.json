@@ -1,6 +1,6 @@
 {
   "name": "kontaktresreg",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "Klient for kontakt og reservasjonsregisteret",
   "main": "index.js",
   "engines": {
