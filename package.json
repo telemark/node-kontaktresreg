@@ -4,7 +4,7 @@
   "description": "Klient for kontakt og reservasjonsregisteret",
   "main": "index.js",
   "engines": {
-    "node": ">=4.6.1"
+    "node": ">=10.15.0"
   },
   "scripts": {
     "test": "standard && nsp check && tap --reporter=spec test/**/*.js",
@@ -28,10 +28,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "http://github.com/telemark/node-kontaktresreg.git"
+    "url": "git+https://github.com/telemark/node-kontaktresreg.git"
   },
   "bugs": {
-    "url": "http://github.com/telemark/node-kontaktresreg/issues"
+    "url": "https://github.com/telemark/node-kontaktresreg/issues"
   },
   "devDependencies": {
     "tap": "12.1.1",
