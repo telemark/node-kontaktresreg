@@ -1,13 +1,11 @@
-'use strict'
+const { readFileSync } = require('fs')
+const sendRequest = require('./lib/sendRequest')
+const settings = require('./lib/settings')
 
-var fs = require('fs')
-var sendRequest = require('./lib/sendRequest')
-var settings = require('./lib/settings')
+const privateKeyPath = './cert/private.pem' // your organization certificate
+const publicKeyPath = './cert/idporten-ver1_ver2-v3.crt' // path to extracted crt from idporten.difi_.no-v3-prod_idp_metadata.zip
 
-var privateKeyPath = './cert/private.pem' // your organization certificate
-var publicKeyPath = './cert/idporten-ver1_ver2-v3.crt' // path to extracted crt from idporten.difi_.no-v3-prod_idp_metadata.zip
-
-var options = {
+const options = {
   wsdl: settings.wsdl.url,
   url: settings.url.ver1,
   action: settings.action.person,
@@ -15,11 +13,11 @@ var options = {
     informasjonsbehov: 'Kontaktinfo',
     personidentifikator: '01013355300'
   },
-  privateKey: fs.readFileSync(privateKeyPath),
-  publicKey: fs.readFileSync(publicKeyPath),
+  privateKey: readFileSync(privateKeyPath),
+  publicKey: readFileSync(publicKeyPath),
   password: ''
 }
 
-sendRequest(options, function (err, data) {
-  console.log(err)
+sendRequest(options, (error, data) => {
+  console.log(error)
 })
