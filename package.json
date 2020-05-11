@@ -37,7 +37,7 @@
   "devDependencies": {
     "tap": "14.10.7",
     "coveralls": "3.1.0",
-    "standard": "14.3.3"
+    "standard": "14.3.4"
   },
   "dependencies": {
     "soap": "git+https://github.com/vpulim/node-soap.git"
