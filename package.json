@@ -35,7 +35,7 @@
     "url": "https://github.com/telemark/node-kontaktresreg/issues"
   },
   "devDependencies": {
-    "tap": "14.10.7",
+    "tap": "14.11.0",
     "coveralls": "3.1.0",
     "standard": "14.3.3"
   },
